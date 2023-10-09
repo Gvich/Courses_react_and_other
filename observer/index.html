@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="prism.css" rel="stylesheet"/>
+    <style>
+        /* Add some CSS styles for the container */
+        #container {
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            border: 1px solid #ccc;
+        }
+
+        /* Add CSS for the list items */
+        .list-item {
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Mutation Observer</h2>
+<div contentEditable id="elem">
+    <!--        Отредактируй <b>меня</b>, пожалуйста-->
+    <pre class="language-javascript"><code> Отредактируй меня, пожалуйста</code></pre>
+</div>
+
+<pre class="language-javascript"><code>
+      // вот код
+      let hello = "world";
+    </code></pre>
+
+<div id="highlight-demo">
+</div>
+<h2>Intersection Observer</h2>
+<div id="container">
+    <div class="list-item">Item 1</div>
+    <div class="list-item">Item 2</div>
+    <div class="list-item">Item 3</div>
+    <div class="list-item">Item 4</div>
+    <div class="list-item">Item 1</div>
+    <div class="list-item">Item 2</div>
+    <div class="list-item">Item 3</div>
+    <div class="list-item">Item 4</div>
+    <div class="list-item">Item 1</div>
+    <div class="list-item">Item 2</div>
+    <div class="list-item">Item 3</div>
+    <div class="list-item">Item 4</div>
+    <!-- Content will be dynamically added here -->
+</div>
+<script>
+    let demoElem = document.getElementById('highlight-demo');
+
+    demoElem.innerHTML = `Фрагмент кода ниже:
+              <pre class="language-javascript"><code> let hello = "world!"; </code></pre>
+              <div>Ещё один:</div>
+              <div>
+                <pre class="language-css"><code>.class { margin: 5px; } </code></pre>
+              </div>
+            `;
+</script>
+<script src="prism.js"></script>
+<script src="mutationObserver.js"></script>
+<script src="intersectionObserver.js"></script>
+</body>
+</html>

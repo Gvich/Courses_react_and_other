@@ -1,0 +1,30 @@
+{
+  "messages": [
+    {
+      "messageId": "1",
+      "userId": "1",
+      "senderName": "Bob",
+      "messageText": "What are you doing here?",
+      "createdAt": "2021-01-14"
+    },
+    {
+      "messageId": "2",
+      "userId": "2",
+      "senderName": "Alice",
+      "messageText": "Go back to work!",
+      "createdAt": "2021-02-15"
+    },
+    {
+      "messageId": "nsQ1snKg",
+      "createdAt": "2023-09-30T20:16:05.126Z",
+      "userId": "qMsOPPND",
+      "messageText": "dsfds"
+    },
+    {
+      "messageId": "Rq7cAnSB",
+      "createdAt": "2023-09-30T20:16:31.006Z",
+      "userId": "IltzptGD",
+      "messageText": "hello mother fuckers"
+    }
+  ]
+}
